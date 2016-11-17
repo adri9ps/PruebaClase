@@ -2,8 +2,8 @@
 public class Refactor03 {
 
 	public static void main(String[] args) {
-		//Calculamos el movimiento de un peón en un tablero de ajedrez
-		//Para una partida con más peones
+		//Calculamos el movimiento de un peï¿½n en un tablero de ajedrez
+		//Para una partida con mï¿½s peones
 		//Juegan negras en la parte inferior del tablero
 		int colPeonNegra=1;
 		int filPeonNegra=3;
@@ -14,11 +14,13 @@ public class Refactor03 {
 		
 		//Calculamos siguiente movimieto
 		if((colPeonNegra++==colPeonBlanca)&&(filPeonNegra++==filPeonBlanca)){
+			
 			//Me como blanca colocado en diagonal derecha
 			sigmovColPeonNegra=colPeonNegra++;
 			sigmovColPeonNegra=filPeonNegra++;
 		}else if((colPeonNegra++==colPeonBlanca)&&(filPeonNegra--==filPeonBlanca)){
-			//Este movimiento está mal
+			
+			//Este movimiento estï¿½ mal
 			//Me como blanca colocado en diagonal izda
 			sigmovColPeonNegra=colPeonNegra++;
 			sigmovColPeonNegra=filPeonNegra--;
